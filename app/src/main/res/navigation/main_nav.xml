@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/searchListFragment">
+
+    <fragment
+        android:id="@+id/searchDetailsFragment"
+        android:name="com.ravitej.flickrsearch.ui.searchDetail.SearchDetailFragment"
+        android:label="Photo Detail"
+        tools:layout="@layout/fragent_search_detail">
+
+        <argument
+            android:name="imageDetails"
+            app:argType="com.ravitej.flickrsearch.data.entities.dtos.ItemsDTO" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchListFragment"
+        android:name="com.ravitej.flickrsearch.ui.searchList.SearchListFragment"
+        android:label="@string/flickr_search_label"
+        tools:layout="@layout/fragment_search_list">
+        <action
+            android:id="@+id/nav_from_search_list_to_detail"
+            app:destination="@id/searchDetailsFragment" />
+    </fragment>
+</navigation>

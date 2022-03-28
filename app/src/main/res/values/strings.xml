@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlickrSearch</string>
+    <string name="flickr_search_label">Flickr search</string>
+    <string name="you_have_no_recent_searches_enter_a_search_term_above">You have no recent searches. Enter a search term above.</string>
+    <string name="recent_searches">Recent searches</string>
+    <string name="search">Search</string>
+    <string name="search_images">Search images...</string>
+</resources>
